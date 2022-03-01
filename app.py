@@ -6,8 +6,8 @@ Created on Tue Mar  1 19:34:24 2022
 """
 import streamlit as st
 from hotfix_decorator import decorator_result
-import pyperclip as pc
-import xclip
+#import pyperclip as pc
+
 
 
 hide_streamlit_style = """
@@ -26,7 +26,7 @@ if input_val:
     output_val = decorator_result(int(input_val))
     st.code(decorator_result(int(input_val)))
 
-copy_btn = st.button('Copy Text')
-if copy_btn and input_val:
-    pc.copy(str(output_val))
-    st.success("Text Copied")
+#copy_btn = st.button('Copy Text')
+#if copy_btn and input_val:
+#    pc.copy(str(output_val))
+#    st.success("Text Copied")
