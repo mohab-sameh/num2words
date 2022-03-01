@@ -7,6 +7,7 @@ Created on Tue Mar  1 19:34:24 2022
 import streamlit as st
 from hotfix_decorator import decorator_result
 import pyperclip as pc
+import xclip
 
 
 hide_streamlit_style = """
