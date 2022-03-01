@@ -13,4 +13,4 @@ input_val = st.text_input('Insert number here')
 
 
 if input_val:
-    st.text(decorator_result(int(input_val)))
+    st.code(decorator_result(int(input_val)))
