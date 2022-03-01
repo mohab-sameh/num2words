@@ -9,6 +9,14 @@ from hotfix_decorator import decorator_result
 import pyperclip as pc
 
 
+hide_streamlit_style = """
+            <style>
+            footer {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+
+
 st.title("Simple Arabic Numbers to Text by Mohab Sameh")
 input_val = st.text_input('Insert number here')
 
